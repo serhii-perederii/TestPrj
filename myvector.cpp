@@ -3,7 +3,6 @@
 //
 
 #include "myvector.h"
-#include <iostream>
 
 using namespace test;
 
@@ -20,7 +19,7 @@ double* Vector::end() {
     return &elem[sz];
 }
 
-std::ostream &operator<<(std::ostream &os, const Vector &vector) {
+std::ostream& test::operator<<(std::ostream &os, const Vector &vector) {
     os << "elem: " << vector.elem << " sz: " << vector.sz;
     return os;
 }

@@ -4,9 +4,10 @@
 
 int main() {
 
-    std::vector <uint8_t>original_v(6);
+    std::vector <uint8_t>original_v;
 
     original_v.push_back(1);
+    original_v.push_back(2);
 
     test::Vector v(6);
 
