@@ -1,2 +1,2 @@
 # TestPrj
-Test project for C++ studing
+Test project for C++ studying
