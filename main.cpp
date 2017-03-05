@@ -21,9 +21,9 @@ int main() {
         std::cerr << "Unhandled exception" << std::endl;
     }
 
-    std::cout << v.begin();
+    std::cout << *v.begin() << std::endl;
 
-    std::cout << v.end();
+    std::cout << *v.end() << std::endl;
 
     auto sz = v.size();
     std::cout << "Hello, World!" << std::endl;
