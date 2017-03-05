@@ -11,7 +11,19 @@ int main() {
 
     test::Vector v(6);
 
-    v[1] = 1;
+    try {
+        v[1] = 1;
+        v[7] = 0;
+    }
+    catch (std::exception &e) {
+        std::cerr << e.what() << std::endl;
+    } catch (...) {
+        std::cerr << "Unhandled exception" << std::endl;
+    }
+
+    std::cout << v.begin();
+
+    std::cout << v.end();
 
     auto sz = v.size();
     std::cout << "Hello, World!" << std::endl;

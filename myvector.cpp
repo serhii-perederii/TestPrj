@@ -7,6 +7,9 @@
 using namespace test;
 
 double& Vector::operator[] (int i) {
+    if (i < 0 || i > sz) {
+        throw std::invalid_argument("out of bounds");
+    }
     return elem[i];
 }
 int Vector::size(){
